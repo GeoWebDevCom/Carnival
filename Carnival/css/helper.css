@@ -873,6 +873,7 @@ img.desaturate:hover {
   opacity: 0.0;
 }
 
+
 .fromRightIn
 {
   transition: transform 1.0s ease, opacity 1.0s ease;
@@ -925,7 +926,7 @@ img.desaturate:hover {
 
 .square-wrap{
  position: absolute;
- width: 680px;
+ width: 710px;
  height: 300px;
  margin-left: -15px;
 }

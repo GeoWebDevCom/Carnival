@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
@@ -7,6 +7,9 @@
     <title>Contact</title>
 
     <!-- CSS  -->
+    <link href="js/plugins/fancybox/jquery.fancybox.css" type="text/css" rel="stylesheet">
+
+
     <link href="css/font-awesome.min.css" type="text/css" rel="stylesheet">
     <link href="css/web-fonts.css" type="text/css" rel="stylesheet">
     <link href="css/materialize.css" type="text/css" rel="stylesheet" >
@@ -15,6 +18,9 @@
     <link href="css/svg.css" rel="stylesheet">
     <link href="css/helper.css" rel="stylesheet">
     <link href="css/style.css" type="text/css" rel="stylesheet" >
+
+
+
 
 
 </head>
@@ -194,34 +200,59 @@
 
     <div class="container">
         
-        <div class="row section-header">
+        <!--<div class="row section-header">
             <div class="col s12 m12 l12 center">
                 <div class="left" data-scroll="toggle(.fromLeftIn, .fromLeftOut)">
                     <h2>studio</h2>
                     <h5>Let’s take a tour at our fully functional facilities studio</h5>
                 </div>
             </div>
-        </div>
+        </div>-->
 
 
-        <div class="row center section-content">
+        <div class="row center section-content">    
+            <div class="col s12 m6 l5">
+                <div class="section-header">
+                    <div class="col s12 m12 l12 center" style="margin-bottom:15px">
+                        <!--<div class="left">
+                            <h2>studio</h2>
+                            <h5>Let’s take a tour at our fully functional facilities studio</h5>
+                        </div>-->
+                        <div class="left" data-scroll="toggle(.fromLeftIn, .fromLeftOut)">
+                            <h2>studio</h2>
+                            <h5>Let’s take a tour at our fully functional facilities studio</h5>
+                        </div>
+                    </div>
+                </div>
 
-            <div class="col s12 m6 l6">
-               <img src="img/studio-1.png" alt="production" class="responsive-img desaturate" data-scroll="toggle(.scaleUpIn, .scaleUpOut)">
-            </div><!--col-->
+       <a id="fc1" href="img/studio-1.png">
+           <img src="img/studio-1.png" alt="production" class="responsive-img desaturate flyin" data-scroll="toggle(.fromBottomIn2, .fromBottomOut2)">
+       </a>
+              
+           
+             </div><!--col-->
             
-            <div class="col s12 m6 l6">
+            <div class="col s12 m6 l7">
                <div class="row">
                     <div class="col s12 m12 l12">
-                        <img src="img/studio-2.png" alt="production" class="responsive-img desaturate left" data-scroll="toggle(.scaleUpIn, .scaleUpOut)">
+                        <a id="fc1" href="img/studio-2.png">
+                            <img src="img/studio-2.png" alt="production" class="responsive-img desaturate left flyin" data-scroll="toggle(.fromBottomIn2, .fromBottomOut2)">
+                        </a>
+                        
                     </div>
                </div>
                <div class="row">
                     <div class="col s12 m12 l6">
-                       <img src="img/studio-3.png" alt="production" class="responsive-img desaturate" data-scroll="toggle(.scaleUpIn, .scaleUpOut)">
+                        <a id="fc1" href="img/studio-3.png">
+                            <img style="width:100%" src="img/studio-3.png" alt="production" class="responsive-img desaturate flyin" data-scroll="toggle(.fromBottomIn2, .fromBottomOut2)">
+                        </a>
+                      
                     </div>
                     <div class="col s12 m12 l6">
-                       <img src="img/studio-4.png" alt="production" class="responsive-img desaturate" data-scroll="toggle(.scaleUpIn, .scaleUpOut)">
+                        <a id="fc1" href="img/studio-4.png">
+                            <img style="width:100%" src="img/studio-4.png" alt="production" class="responsive-img desaturate flyin" data-scroll="toggle(.fromBottomIn2, .fromBottomOut2)">
+                        </a>
+                      
                     </div>
                </div>  
             </div><!--col-->
@@ -252,17 +283,20 @@
 
               </svg>
 
-                <h2 class="header" data-scroll="toggle(.fromBottomIn, .fromBottomOut)">let's catch up </h2>
+                <h2 class="header" >
+                    <span data-scroll="toggle(.fromLeftIn, .fromLeftOut)">let's</span>
+                    <span data-scroll="toggle(.fromLeftIn, .fromLeftOut)">catch up </span>
+                </h2>
                 <div class="contact-info">
                     <p data-scroll="toggle(.fromLeftIn, .fromLeftOut)"><i class="fa fa-phone"></i> (08)39110875</p>
                     <p data-scroll="toggle(.fromLeftIn, .fromLeftOut)"><i class="fa fa-home"></i> 5th floor, 55 Nguyen Van Thu str., Da Kao Ward, District 1, HCM city</p>
                     <div class="row">
                         <div class="col m6 s6">
-                            <h4 data-scroll="toggle(.fromTopIn, .fromTopOut)">For client</h4>
+                            <h4 data-scroll="toggle(.fromTopIn, .fromTopOut)">FOR CLIENT</h4>
                             <p  data-scroll="toggle(.fromLeftIn, .fromLeftOut)" class="vertical-line-blue-left"><i class="fa fa-envelope-o"></i> hello@bycarnival.vn</p>
                         </div>
                         <div class="col m6 s6">
-                            <h4 data-scroll="toggle(.fromTopIn, .fromTopOut)">For crew</h4>
+                            <h4 data-scroll="toggle(.fromTopIn, .fromTopOut)">FOR CREW</h4>
                             <p  data-scroll="toggle(.fromLeftIn, .fromLeftOut)" class="vertical-line-blue-left"><i class="fa fa-envelope-o"></i> trung.duong@bycarnival.vn</p>
                         </div>
                     </div>
@@ -316,6 +350,9 @@
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="js/modernizr.js"></script>
      <!-- Compiled and minified JavaScript -->
+
+    <script src="js/plugins/fancybox/jquery.fancybox.pack.js"></script>
+
     <script src="js/materialize.min.js"></script>
     <script src="js/carousel.js"></script>
     <script src="js/jquery.swipebox.min.js"></script>

@@ -377,6 +377,43 @@ $( document ).ready(function() {
 	});
    	 
    
+    // Change image effect on Contac page
+ 
+    $("a#fc1").fancybox({
+        'hideOnContentClick': true,
+        'transitionIn': 'elastic',
+        'transitionOut': 'elastic',
+        'speedIn': 600,
+        'speedOut': 200,
+        'overlayShow': false,
+        'autoScale': true
+    });
+    $("a#fc2").fancybox({
+        'hideOnContentClick': true,
+        'transitionIn': 'elastic',
+        'transitionOut': 'elastic',
+        'speedIn': 600,
+        'speedOut': 200,
+        'overlayShow': false,
+        'autoScale': true
+    });
+    $("a#fc3").fancybox({
+        'hideOnContentClick': true,
+        'transitionIn': 'elastic',
+        'transitionOut': 'elastic',
+        'speedIn': 600,
+        'speedOut': 200,
+        'overlayShow': false,
+        'autoScale': true
+    });
+    $("a#fc4").fancybox({
+        'hideOnContentClick': true,
+        'transitionIn': 'elastic',
+        'transitionOut': 'elastic',
+        'speedIn': 600,
+        'speedOut': 200,
+        'overlayShow': false,
+        'autoScale': true
+    });
 
 });
-

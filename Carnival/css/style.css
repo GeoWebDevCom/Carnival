@@ -235,8 +235,10 @@ nav#nav_f ul li.active:before {
     position: relative;
     overflow: hidden;
     z-index: 1;
-    width: 24px;
-    height: 24px;
+    /*width: 24px;
+    height: 24px;*/
+     width: 14px;
+    height: 14px;
     line-height: 24px;
     padding: 0;
     background-color: #26a69a;
@@ -786,7 +788,8 @@ corresponds to the arrow we want to display */
 }
 
 .contact-info p{
-    font-size: 1.2rem;
+    /*font-size: 1.2rem;*/
+    font-size: 1.5rem;
 }
 /* ONLINE ENTERTAINMENT PAGE ******************************************************************************************************************************************/
 
@@ -1080,9 +1083,12 @@ corresponds to the arrow we want to display */
 }
 
 #studio div.section-content .col{
-    padding-left: 4rem;
-    padding-right: 4rem;
+    /*padding-left: 4rem;
+    padding-right: 4rem;*/
+     padding-left: 1rem;
+    padding-right: 1rem;
 }
+
 
 
 /* CATCH UP ON CONTACT */
