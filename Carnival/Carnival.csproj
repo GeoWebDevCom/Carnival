@@ -122,6 +122,7 @@
     <Content Include="fonts\web-fonts\ElleFutura-Medium.woff" />
     <Content Include="fonts\web-fonts\ElleFutura-Medium.woff2" />
     <Content Include="img\svg\.DS_Store" />
+    <None Include="Properties\PublishProfiles\Carnival.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
