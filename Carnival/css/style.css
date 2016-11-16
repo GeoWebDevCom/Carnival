@@ -302,8 +302,8 @@ nav#nav_f ul li.active:before {
 
 }
 
-.custom-btn-3:hover img.camera-icon,
-.custom-btn-3:hover img.device-icon,
+/*.custom-btn-3:hover img.camera-icon,*/
+/*.custom-btn-3:hover img.device-icon,*/
 .custom-btn-3:hover img.hand-icon{
     -webkit-animation-name: shakeit;
 -webkit-animation-duration: 1s;
@@ -314,6 +314,44 @@ animation-duration: 1s;
 animation-timing-function: linear;
 animation-iteration-count: infinite;
 
+}
+.custom-btn-3 img.device-icon{
+        transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    margin-left:50px;
+
+}
+
+.custom-btn-3:hover img.camera-icon{
+        margin-top:-50px;
+      animation: slide-down 0.5s forwards;
+    -webkit-animation: slide-down 0.5s forwards;
+}
+.custom-btn-3 img.camera-icon{
+        transform: translateY(-100%);
+    -webkit-transform: translateY(-100%);
+    margin-top:35px;
+
+}
+
+.custom-btn-3:hover img.device-icon{
+        margin-left:-50px;
+      animation: slide-in 0.5s forwards;
+    -webkit-animation: slide-in 0.5s forwards;
+}
+@keyframes slide-in {
+    100% { transform: translateX(0%); }
+}
+
+@-webkit-keyframes slide-in {
+    100% { -webkit-transform: translateX(0%); }
+}
+@keyframes slide-down {
+    100% { transform: translateY(0%); }
+}
+
+@-webkit-keyframes slide-down {
+    100% { -webkit-transform: translateY(0%); }
 }
 
 @-webkit-keyframes shakeit {
