@@ -7,7 +7,9 @@
     <title>Content Production</title>
 
     <!-- CSS  -->
-    <!-- CSS  -->
+    <!-- Latest compiled and minified Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
     <link href="css/font-awesome.min.css" type="text/css" rel="stylesheet">
     <link href="css/web-fonts.css" type="text/css" rel="stylesheet">
     <!-- Compiled and minified CSS -->
@@ -39,6 +41,28 @@
     <div class="navbar-fixed">
         <nav id="nav_f" role="navigation" class="site-header">
             <div class="container">
+                <div class="navbar-header">
+                    <button onclick="ShowMenu(this)" style="margin-right:5px;background-color:transparent !important; padding:8px 10px" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+
+                        <span style="font-size:20px; color:#fac443" class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                    </button>
+                    <a class="navbar-brand" style="padding:0px;" href="#"><img src="img/carnival-logo.png" alt=""></a>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="content-production.html"><span class="ac hvr-underline-from-center">Content production<span class="sr-only">(current)</span></span></a></li>
+                        <li><a href="online-entertainment.html"><span class="ac hvr-underline-from-center">Online entertainment</span></a></li>
+                        <li><a href="contact.html"><span class="ac hvr-underline-from-center">Contact</span></a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!--<div class="container">
                 <div class="nav-wrapper">
                
                     <ul class="hide-on-med-and-down">
@@ -54,7 +78,7 @@
                     </ul>
                 <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
                 </div>
-            </div>
+            </div>-->
         </nav>
     </div>
 
@@ -89,7 +113,7 @@
     <div class="container">
         <div class="row">
             <div class="valign-wrapper center">
-                <h1 data-scroll="toggle(.scaleDownIn, .scaleDownOut)" class="valign center header yellow-border w30 h5 padding-quarter line-bottom-center-2"> our services</h1>
+                <h1 style="text-transform:uppercase; max-width:550px;font-family:'Elkwood', sans-serif; font-weight:bold" data-scroll="toggle(.scaleDownIn, .scaleDownOut)" class="valign center header yellow-border h5 padding-quarter line-bottom-center-2"> our services</h1>
             </div>
 
                 
@@ -127,7 +151,7 @@
             </div>
         </div>
 
-        <div class="row center section-content">
+        <div id="desktop-only" class="row center section-content">
 
             <div id="latest-project" class="col s12 m12 l8 offset-l2">
                 <div class="col s12 m12 l4">
@@ -150,7 +174,7 @@
 
             <div class="col s12 m12 l12">
                 <div class="carousel" data-scroll="toggle(.fromBottomIn, .fromBottomOut)">          
-                    <a class="swipebox carousel-item modal-trigger text-uppercase white-text" rel="youtube" href="https://www.youtube.com/watch?v=a6SHAlw3IEw" ><img src="img/video-production-thumb-1.png"><span>ensure viral clip</span></a>
+                    <a class="swipebox carousel-item modal-trigger text-uppercase white-text" rel="youtube" href="https://www.youtube.com/watch?v=a6SHAlw3IEw"><img src="img/video-production-thumb-1.png"><span>ensure viral clip</span></a>
                     <a class="swipebox carousel-item modal-trigger text-uppercase white-text" rel="youtube" href="https://www.youtube.com/watch?v=a6SHAlw3IEw"><img src="img/video-production-thumb-2.png"><span>ensure viral clip</span></a>
                     <a class="swipebox carousel-item modal-trigger text-uppercase white-text" rel="youtube" href="https://www.youtube.com/watch?v=a6SHAlw3IEw"><img src="img/video-production-thumb-1.png"><span>ensure viral clip</span></a>
                     <a class="swipebox carousel-item modal-trigger text-uppercase white-text" rel="youtube" href="https://www.youtube.com/watch?v=a6SHAlw3IEw"><img src="img/video-production-thumb-1.png"><span>ensure viral clip</span></a>
@@ -215,7 +239,7 @@
     <div class="container">
          <div class="row section-header">
             <div class="col s12 m12 l12 center">
-                <div class="left" data-scroll="toggle(.fromLeftIn, .fromLeftOut)">
+                <div class="left" data-scroll="toggle(.fromTopIn, .fromTopOut)">
                      <h5>graphic design &</h5>
                     <h2>illustration</h2>
                     <p>We offer a wide range of choice in art: from simple drawings to detailed artwork.</p>
@@ -449,8 +473,6 @@
 </html>
 
 
-
-
 <svg class="clip-svg" width="0" height="0">
   <defs>
     <clipPath id="clip-shape-catch-up" clipPathUnits="objectBoundingBox" >
@@ -484,3 +506,27 @@
 </svg>
 
 
+<script>
+    $(document).ready(function () {
+        if ($(window).width() < 768) {
+            $("#bs-example-navbar-collapse-1 ul").css("background-color", "#1B2C3C");
+            $("#bs-example-navbar-collapse-1 ul").css("margin-top", "0px");
+            $("#bs-example-navbar-collapse-1 li").css("text-align", "center");
+            $("#bs-example-navbar-collapse-1 li").css("width", "100%");
+
+            $("#desktop-only").hide();
+        }
+
+    });
+    function ShowMenu(htmlItem) {
+        if ($("#bs-example-navbar-collapse-1").hasClass("in")) {
+            $(htmlItem).addClass("collapsed");
+            $("#bs-example-navbar-collapse-1").removeClass("in");
+        } else {
+            $("#bs-example-navbar-collapse-1").addClass("in");
+
+            $(htmlItem).removeClass("collapsed");
+        }
+
+    }
+</script>

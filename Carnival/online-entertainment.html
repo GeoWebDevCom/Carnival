@@ -7,6 +7,10 @@
     <title>Online Entertainment</title>
 
     <!-- CSS  -->
+    <!-- Latest compiled and minified Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
     <link href="css/font-awesome.min.css" type="text/css" rel="stylesheet">
     <link href="css/web-fonts.css" type="text/css" rel="stylesheet">
     <!-- Compiled and minified CSS -->
@@ -34,21 +38,40 @@
     <div class="navbar-fixed">
         <nav id="nav_f" role="navigation" class="site-header">
             <div class="container">
-                <div class="nav-wrapper">
-               
-                    <ul class="hide-on-med-and-down">
-                        <li id="logo-container"><a href="index.html"><img src="img/carnival-logo.png" alt=""></a></li>
-                        <li class="hvr-underline-from-center"><a href="content-production.html">Content production</a></li>
-                        <li class="hvr-underline-from-center active"><a href="online-entertainment.html">Online entertainment</a></li>
-                        <li class="hvr-underline-from-center"><a href="contact.html">Contact us</a></li>
-                    </ul>
-                    <ul id="nav-mobile" class="side-nav">
-                         <li><a href="content-production.html">Content production</a></li>
-                        <li class="active"><a href="online-entertainment.html">Online entertainment</a></li>
-                        <li><a href="contact.html">Contact us</a></li>
-                    </ul>
-                <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+                <div class="navbar-header">
+                    <button onclick="ShowMenu(this)" style="margin-right:5px;background-color:transparent !important; padding:8px 10px" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+
+                        <span style="font-size:20px; color:#fac443" class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                    </button>
+                    <a class="navbar-brand" style="padding:0px;" href="#"><img src="img/carnival-logo.png" alt=""></a></a>
                 </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li><a href="content-production.html"><span class="ac hvr-underline-from-center">Content production<span class="sr-only">(current)</span></span></a></li>
+                        <li class="active"><a href="online-entertainment.html"><span class="ac hvr-underline-from-center">Online entertainment</span></a></li>
+                        <li><a href="contact.html"><span class="ac hvr-underline-from-center">Contact</span></a></li>
+                    </ul>
+                </div>
+
+
+                <!--<div class="nav-wrapper">
+            <ul class="hide-on-med-and-down">
+                <li id="logo-container"><a href="index.html"><img src="img/carnival-logo.png" alt=""></a></li>
+                <li class="hvr-underline-from-center"><a href="content-production.html">Content production</a></li>
+                <li class="hvr-underline-from-center"><a href="online-entertainment.html">Online entertainment</a></li>
+                <li class="hvr-underline-from-center"><a href="contact.html">Contact us</a></li>
+            </ul>
+            <ul id="nav-mobile" class="side-nav">
+                <li><a href="production.html">Content production</a></li>
+                <li><a href="online-entertainment.html">Online entertainment</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+            </ul>
+        <a style="float:right;" href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+        </div>-->
             </div>
         </nav>
     </div>
@@ -61,7 +84,7 @@
             <div class="content">
               
                
-                <h1 class="center white-text header tlt4" style="line-height:2rem">online entertainment</h1>   
+                <h1 class="center white-text header tlt4">online entertainment</h1>   
                 <h3 class="line-3 line-bottom-center"></h3>            
             
                 <h5 class="center white-text header tlt5 margin-top-three" style="margin-bottom:0.5rem">A carnival is always full with colors and characters, this inspired us to create our</h5>
@@ -91,11 +114,11 @@
 
           <div class="col s12 m12 l12">
               <div class="carousel">          
-                  <a style="width:19%" title="BỐ TRẺ CON" class="carousel-item modal-trigger" href="#modal-our-show"><img src="img/show-1.png"></a>
-                  <a style="width:19%" title="BỐ TRẺ CON" class="carousel-item modal-trigger" href="#modal-our-show"><img src="img/show-2.png"></a>
-                  <a style="width:19%" title="BỐ TRẺ CON" class="carousel-item modal-trigger" href="#modal-our-show"><img src="img/show-3.png"></a>
-                  <a style="width:19%" title="BỐ TRẺ CON" class="carousel-item modal-trigger" href="#modal-our-show"><img src="img/show-2.png"></a>
-                  <a style="width:19%" title="BỐ TRẺ CON" class="carousel-item modal-trigger" href="#modal-our-show"><img src="img/show-3.png"></a>
+                  <a style="min-width:200px;width:20%" title="BỐ TRẺ CON" class="carousel-item modal-trigger" href="#modal-our-show"><img src="img/show-1.png"></a>
+                  <a style="min-width:200px;width:20%" title="BỐ TRẺ CON" class="carousel-item modal-trigger" href="#modal-our-show"><img src="img/show-2.png"></a>
+                  <a style="min-width:200px;width:20%" title="BỐ TRẺ CON" class="carousel-item modal-trigger" href="#modal-our-show"><img src="img/show-3.png"></a>
+                  <!--<a style="width:19%" title="BỐ TRẺ CON" class="carousel-item modal-trigger" href="#modal-our-show"><img src="img/show-2.png"></a>
+                  <a style="width:19%" title="BỐ TRẺ CON" class="carousel-item modal-trigger" href="#modal-our-show"><img src="img/show-3.png"></a>-->
               </div>
           </div>
        
@@ -129,31 +152,47 @@
         <div class="row center section-content">
 
              <div class="col m4 s12">
-                
-                <a class="modal-trigger btn-floating btn-large pink-shadow   white custom-btn-3" href="#modal-original-show" data-scroll="toggle(.scaleDownIn, .scaleDownOut)"> 
-                  <img class="camera-icon" src="img/camera.png" alt="">
-                </a>
+                 <div class="col m12 s6">
+                     <a class="modal-trigger btn-floating btn-large pink-shadow   white custom-btn-3" href="#modal-original-show" data-scroll="toggle(.scaleDownIn, .scaleDownOut)">
+                         <img class="camera-icon" src="img/camera.png" alt="">
+                     </a>
+                 </div>
+                 <div class="col m12 s6">
+                     <h3 class="header text-uppercase" data-scroll="toggle(.scaleDownIn, .scaleDownOut)">production</h3>
+                     <p class="desc" data-scroll="toggle(.fromBottomIn, .fromBottomOut)">Time to bring your script to screen with our well-crafted production process! </p>
+                 </div>
 
-                <h3 class="header text-uppercase" data-scroll="toggle(.scaleDownIn, .scaleDownOut)">production</h3>
-                <p class="desc" data-scroll="toggle(.fromBottomIn, .fromBottomOut)">Time to bring your script to screen with our well-crafted production process! </p>
+               
             </div><!--col-->
             
             <div class="col m4 s12">
-                <a class="modal-trigger btn-floating btn-large pink-shadow waves-effect waves-light white custom-btn-3" href="#modal-original-show" data-scroll="toggle(.scaleDownIn, .scaleDownOut)"> 
-                  <img class="device-icon" src="img/device.png" alt="">
-                </a>
+                <div class="col m12 s6">
+                    <a class="modal-trigger btn-floating btn-large pink-shadow waves-effect waves-light white custom-btn-3" href="#modal-original-show" data-scroll="toggle(.scaleDownIn, .scaleDownOut)">
+                        <img class="device-icon" src="img/device.png" alt="">
+                    </a>
+                </div>
+                <div class="col m12 s6">
+                    <h3 class="header text-uppercase" data-scroll="toggle(.scaleDownIn, .scaleDownOut)">advertising</h3>
+                    <p class="desc" data-scroll="toggle(.fromBottomIn, .fromBottomOut)">Demand for advertising and product placement? Carnival Entertainment is an ideal place!</p>
+                </div>
+              
 
-                <h3 class="header text-uppercase" data-scroll="toggle(.scaleDownIn, .scaleDownOut)">advertising</h3>
-                <p class="desc" data-scroll="toggle(.fromBottomIn, .fromBottomOut)">Demand for advertising and product placement? Carnival Entertainment is an ideal place!</p>
+              
             </div><!--col-->
 
             <div class="col m4 s12">
-                 <a class="modal-trigger btn-floating btn-large pink-shadow waves-effect waves-light white custom-btn-3" href="#modal-original-show" data-scroll="toggle(.scaleDownIn, .scaleDownOut)"> 
-                  <img class="hand-icon" src="img/hand.png" alt="">
-                </a>
+                <div class="col m12 s6">
+                    <a class="modal-trigger btn-floating btn-large pink-shadow waves-effect waves-light white custom-btn-3" href="#modal-original-show" data-scroll="toggle(.scaleDownIn, .scaleDownOut)">
+                        <img class="hand-icon" src="img/hand.png" alt="">
+                    </a>
+                </div>
+                <div class="col m12 s6">
+                    <h3 class="header text-uppercase" data-scroll="toggle(.fromBottomIn, .fromBottomOut)">sponsorship</h3>
+                    <p class="desc" data-scroll="toggle(.fromBottomIn, .fromBottomOut)">We are so glad to welcome you as our sponsor!</p>
+                </div>
+                
 
-                <h3 class="header text-uppercase" data-scroll="toggle(.fromBottomIn, .fromBottomOut)">sponsorship</h3>
-                <p class="desc" data-scroll="toggle(.fromBottomIn, .fromBottomOut)">We are so glad to welcome you as our sponsor!</p>
+                
             </div><!--col-->
 
         </div><!--row-->
@@ -235,16 +274,16 @@
 
                 <h2 class="header" data-scroll="toggle(.fromBottomIn, .fromBottomOut)">let's catch up </h2>
                 <div class="contact-info">
-                    <p data-scroll="toggle(.fromLeftIn, .fromLeftOut)"><i class="fa fa-phone"></i> (08)39110875</p>
-                    <p data-scroll="toggle(.fromLeftIn, .fromLeftOut)"><i class="fa fa-home"></i> 5th floor, 55 Nguyen Van Thu str., Da Kao Ward, District 1, HCM city</p>
+                    <p data-scroll="toggle(.fromTopIn, .fromTopOut)"><i class="fa fa-phone"></i> (08)39110875</p>
+                    <p data-scroll="toggle(.fromTopIn, .fromTopOut)"><i class="fa fa-home"></i> 5th floor, 55 Nguyen Van Thu str., Da Kao Ward, District 1, HCM city</p>
                     <div class="row">
                         <div class="col m6 s6">
                             <h4 data-scroll="toggle(.fromTopIn, .fromTopOut)">FOR CLIENT</h4>
-                            <p data-scroll="toggle(.fromLeftIn, .fromLeftOut)" class="vertical-line-blue-left"><i class="fa fa-envelope-o"></i> hello@bycarnival.vn</p>
+                            <p data-scroll="toggle(.fromTopIn, .fromTopOut)" class="vertical-line-blue-left"><i class="fa fa-envelope-o"></i> hello@bycarnival.vn</p>
                         </div>
                         <div class="col m6 s6">
                             <h4 data-scroll="toggle(.fromTopIn, .fromTopOut)">FOR CREW</h4>
-                            <p data-scroll="toggle(.fromLeftIn, .fromLeftOut)" class="vertical-line-blue-left"><i class="fa fa-envelope-o"></i> trung.duong@bycarnival.vn</p>
+                            <p data-scroll="toggle(.fromTopIn, .fromTopOut)" class="vertical-line-blue-left"><i class="fa fa-envelope-o"></i> trung.duong@bycarnival.vn</p>
                         </div>
                     </div>
                 </div>
@@ -262,7 +301,7 @@
             <div class="col l12 s12">
                 <ul class="horizontal-list text-uppercase">
                     <li data-scroll="toggle(.fromLeftIn, .fromLeftOut)">
-                        <a class="white-text line-bottom hvr-underline-from-left" href="index.html">
+                        <a class="white-text line-bottom hvr-underline-from-left" href="content-production.html">
                             content production
                         </a>
                     </li>
@@ -455,6 +494,7 @@
     <script type="text/javascript" src="js/skrollr.min.js"></script>
     <script src="js/init.js"></script>
 
+    <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>-->
 
     <!-- 
     <script src="min/plugin-min.js"></script>
@@ -487,3 +527,28 @@
     </clipPath>
   </defs>
 </svg>
+
+
+<script>
+    $(document).ready(function () {
+        if ($(window).width() < 768) {
+            $("#bs-example-navbar-collapse-1 ul").css("background-color", "#1B2C3C");
+            $("#bs-example-navbar-collapse-1 ul").css("margin-top", "0px");
+            $("#bs-example-navbar-collapse-1 li").css("text-align", "center");
+            $("#bs-example-navbar-collapse-1 li").css("width", "100%");
+
+        }
+
+    });
+    function ShowMenu(htmlItem) {
+        if ($("#bs-example-navbar-collapse-1").hasClass("in")) {
+            $(htmlItem).addClass("collapsed");
+            $("#bs-example-navbar-collapse-1").removeClass("in");
+        } else {
+            $("#bs-example-navbar-collapse-1").addClass("in");
+
+            $(htmlItem).removeClass("collapsed");
+        }
+       
+    }
+</script>

@@ -8,6 +8,8 @@
 
     <!-- CSS  -->
     <link href="js/plugins/fancybox/jquery.fancybox.css" type="text/css" rel="stylesheet">
+    <!-- Latest compiled and minified Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
 
     <link href="css/font-awesome.min.css" type="text/css" rel="stylesheet">
@@ -40,22 +42,25 @@
     <div class="navbar-fixed">
         <nav id="nav_f" role="navigation" class="site-header">
             <div class="container">
-                <div class="nav-wrapper">
-               
-                    <ul class="hide-on-med-and-down">
-                        <li id="logo-container"><a href="index.html"><img src="img/carnival-logo.png" alt=""></a></li>
-                        <li class="hvr-underline-from-center"><a href="content-production.html">Content production</a></li>
-                        <li class="hvr-underline-from-center"><a href="online-entertainment.html">Online entertainment</a></li>
-                        <li class="hvr-underline-from-center active"><a href="contact.html">Contact us</a></li>
-                    </ul>
-                    <ul id="nav-mobile" class="side-nav">
-                         <li><a href="content-production.html">Content production</a></li>
-                        <li><a href="online-entertainment.html">Online entertainment</a></li>
-                        <li class="active"><a href="contact.html">Contact us</a></li>
-                    </ul>
-                    <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
-          
+                <div class="navbar-header">
+                    <button onclick="ShowMenu(this)" style="margin-right:5px;background-color:transparent !important; padding:8px 10px" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+
+                        <span style="font-size:20px; color:#fac443" class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                    </button>
+                    <a class="navbar-brand" style="padding:0px;" href="#"><img src="img/carnival-logo.png" alt=""></a>
                 </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li><a href="content-production.html"><span class="ac hvr-underline-from-center">Content production<span class="sr-only">(current)</span></span></a></li>
+                        <li><a href="online-entertainment.html"><span class="ac hvr-underline-from-center">Online entertainment</span></a></li>
+                        <li class="active"><a href="contact.html"><span class="ac hvr-underline-from-center">Contact</span></a></li>
+                    </ul>
+                </div>
+
             </div>
         </nav>
     </div>
@@ -403,3 +408,28 @@
     </clipPath>
   </defs>
 </svg>
+
+
+<script>
+    $(document).ready(function () {
+        if ($(window).width() < 768) {
+            $("#bs-example-navbar-collapse-1 ul").css("background-color", "#1B2C3C");
+            $("#bs-example-navbar-collapse-1 ul").css("margin-top", "0px");
+            $("#bs-example-navbar-collapse-1 li").css("text-align", "center");
+            $("#bs-example-navbar-collapse-1 li").css("width", "100%");
+
+        }
+
+    });
+    function ShowMenu(htmlItem) {
+        if ($("#bs-example-navbar-collapse-1").hasClass("in")) {
+            $(htmlItem).addClass("collapsed");
+            $("#bs-example-navbar-collapse-1").removeClass("in");
+        } else {
+            $("#bs-example-navbar-collapse-1").addClass("in");
+
+            $(htmlItem).removeClass("collapsed");
+        }
+
+    }
+</script>
