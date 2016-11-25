@@ -109,7 +109,7 @@ $( document ).ready(function() {
   	$('.line-2').hide();
 
   	 $('.tlt1').textillate({
-  	 	minDisplayTime: 3000,
+  	 	minDisplayTime: 500,
   	 	initialDelay: 0,
 	    loop: true,
 	    in:{ 
@@ -140,8 +140,8 @@ $( document ).ready(function() {
 	});
 
   	$('.tlt2').textillate({
-  		minDisplayTime: 3000,
-  		initialDelay: 3000,
+  		minDisplayTime: 2000,
+  		initialDelay: 1500,
 	    loop: false,
 	    in:{ 
 	        effect: 'fadeInLeft',
@@ -357,12 +357,7 @@ $( document ).ready(function() {
   	//Initiat WOW JS
 	new WOW().init();
 	
-	if( $('#container').length){
-		 $('#container').masonry({
-		    // options
-		    itemSelector : '.m-item'
-		  });
-	}
+
    	
 
 	if( $('.swipebox').length){
@@ -423,5 +418,18 @@ $( document ).ready(function() {
    	     });
    	 }
   
+   	 if ($('#container').length) {
 
+   	     $('#container').imagesLoaded(function () {
+   	         $('#container').masonry({
+   	             // options
+   	             itemSelector: '.m-item'
+   	         });
+   	     });
+
+   	     //$('#container').masonry({
+   	     //    // options
+   	     //    itemSelector: '.m-item'
+   	     //});
+   	 }
 });

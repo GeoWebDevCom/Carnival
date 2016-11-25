@@ -171,9 +171,9 @@ nav ul a {
     opacity:0.9;
 }
 
-nav#nav_f ul li {
+/*nav#nav_f ul li {
     padding-top: 2rem;
-}
+}*/
 
    #nav_f .navbar-brand img{
         width:60px;
@@ -197,6 +197,7 @@ line-height: 2rem;
 }
    .square-wrap{
           width:100%;
+          max-width:710px;
       }
 
 
@@ -908,29 +909,35 @@ height: 3px;
 #what-make-us div.crews #crew-1,
 #our-team div.crews #crew-1{
    position: absolute;
-   left: 10%;
-   top: 26%;
+   /*left: 10%;
+   top: 26%;*/
+      left: 20%;
+   top: 36%;
 }
 
 #what-make-us div.crews #crew-2,
 #our-team div.crews #crew-2{
    position: absolute;
-   left: 38%;
+   /*left: 38%;*/
+    left: 47%;
    top: 55%;
 }
 
 #what-make-us div.crews #crew-3,
 #our-team div.crews #crew-3{
    position: absolute;
-   left: 55%;
+   /*left: 55%;*/
+      left: 60%;
    top: 34%;
 }
 
 #what-make-us div.crews #crew-4,
 #our-team div.crews #crew-4{
    position: absolute;
-   left: 85%;
-   top: 34%;
+   /*left: 85%;
+   top: 34%;*/
+      left: 77%;
+   top: 40%;
 }
 
 
@@ -1787,7 +1794,7 @@ footer.page-footer {
   width: 100%;
   /*min-height: 80px;*/
   z-index: 999!important;
-  background-color: rgba(27,44,60,100);/* dark blue */
+  background-color: rgba(27,44,60,100) !important;/* dark blue */
 }
 
 
