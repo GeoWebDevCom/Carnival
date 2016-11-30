@@ -240,3 +240,5 @@ ModelManifest.xml
 
 # FAKE - F# Make
 .fake/
+/WEBSITE R2
+/__MACOSX/WEBSITE R2

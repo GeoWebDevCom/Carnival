@@ -1,4 +1,4 @@
-	
+
  $(window).on("load",function(){
 	if($('.mcs-horizontal-example').length){
 		 $(".mcs-horizontal-example").mCustomScrollbar({
@@ -364,12 +364,17 @@ $( document ).ready(function() {
 		$( '.swipebox' ).swipebox();
 	}
    	 
+    // NOT WORK ON MOBILE
+     var isMobile = window.matchMedia("only screen and (max-width: 760px)");
 
-   	 skrollr.init({
-		forceHeight: false,
-		smoothScrolling:true,
-		smoothScrollingDuration:500
-	});
+    if (!isMobile.matches) {
+        //Conditional script here
+        skrollr.init({
+            forceHeight: false,
+            smoothScrolling: true,
+            smoothScrollingDuration: 3000
+        });
+    }
    	 
    
     // Change image effect on Contac page
@@ -432,4 +437,7 @@ $( document ).ready(function() {
    	     //    itemSelector: '.m-item'
    	     //});
    	 }
+
+   	 jQuery.scrollSpeed(50, 800);
+
 });
