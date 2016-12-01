@@ -164,8 +164,8 @@
                                 <iframe src="//www.youtube.com/embed/Q8TXgCzxEnw?rel=0" frameborder="0" allowfullscreen></iframe>
                             </div>
                         </div>
-                    </div><!--col-->
-                </div><!--row-->
+                    </div>
+                </div>
 
 
 
@@ -186,18 +186,18 @@
                         <a id="carousel-prev-icon"><i class="fa fa-angle-left yellow-text large"></i></a>
                     </div>
 
-                </div><!--row-->
+                </div>
 
 
-            </div><!--container-->
-        </div><!--video-production-->
+            </div>
+        </div>
 
 
         <div class="section scrollspy" id="photography-headline">
             <div class="container">
                 <div class="row section-header">
                     <div class="col s12 m12 l12 center">
-                        <div class="right" data-scroll="toggle(.fromRightIn, .fromRightOut)">
+                        <div style="text-align:right" data-scroll="toggle(.fromTopIn, .fromTopOut)">
                             <h2>photography</h2>
                             <h5>We provide professional image production for your needed.</h5>
                         </div>
@@ -262,7 +262,7 @@
                             <div class="m-item" data-scroll="toggle(.fromBottomIn2, .fromBottomOut2)"> <a rel="gallery-illustration" href="img/illustration-4.png" class="swipebox" title="My Caption"><img src="img/illustration-4.png" class="responsive-img desaturate"></a></div>
                             <div class="m-item" data-scroll="toggle(.fromBottomIn2, .fromBottomOut2)"> <a rel="gallery-illustration" href="img/illustration-5.png" class="swipebox" title="My Caption"><img src="img/illustration-5.png" class="responsive-img desaturate"></a></div>
                      
-                            <div class="m-item " data-scroll="toggle(.fromBottomIn2, .fromBottomOut2)"><img src="img/grid-blank.png" class="responsive-img"></div>
+                            <div id="hide-on-mobile" class="m-item " data-scroll="toggle(.fromBottomIn2, .fromBottomOut2)"><img src="img/grid-blank.png" class="responsive-img"></div>
                             <div class="m-item" data-scroll="toggle(.fromBottomIn2, .fromBottomOut2)"> <a rel="gallery-illustration" href="img/illustration-6.png" class="swipebox" title="My Caption"><img src="img/illustration-6.png" class="responsive-img desaturate"></a></div>
                         </div>
                     </div>
@@ -332,27 +332,30 @@
                 <div class="row section-catch-up" style="margin-bottom:12rem;">
                     <div class="col m8 offset-m2 s12">
 
-                        <svg class="square-wrap" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+                        <svg id="hide-on-mobile" class="square-wrap" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
 
                             <rect x="0" y="0" height="100%" width="100%" fill="none" class="square" data-0-bottom="stroke-dashoffset:3000;" data--300-bottom="stroke-dashoffset:0;"></rect>
 
                         </svg>
 
-                        <h2 class="header" data-scroll="toggle(.fromBottomIn, .fromBottomOut)">let's catch up </h2>
-                        <div class="contact-info">
-                            <p data-scroll="toggle(.fromTopIn, .fromTopOut)" style="margin-bottom:10px"><i class="fa fa-phone"></i> (08)39110875</p>
-                            <p data-scroll="toggle(.fromTopIn, .fromTopOut)"><i class="fa fa-home"></i> 5th floor, 55 Nguyen Van Thu str., Da Kao Ward, District 1, HCM city</p>
-                            <div class="row">
-                                <div class="col m6 s12">
-                                    <h4 class="text-uppercase" data-scroll="toggle(.fromTopIn, .fromTopOut)">FOR CLIENT</h4>
-                                    <p data-scroll="toggle(.fromTopIn, .fromTopOut)" class="vertical-line-blue-left"><i class="fa fa-envelope-o"></i> hello@bycarnival.vn</p>
-                                </div>
-                                <div class="col m6 s12">
-                                    <h4 class="text-uppercase" data-scroll="toggle(.fromTopIn, .fromTopOut)">FOR CREW</h4>
-                                    <p data-scroll="toggle(.fromTopIn, .fromTopOut)" class="vertical-line-blue-left"><i class="fa fa-envelope-o"></i> trung.duong@bycarnival.vn</p>
+                        <div class="eff-on-mobile">
+                            <h2 class="header" data-scroll="toggle(.fromBottomIn, .fromBottomOut)">let's catch up </h2>
+                            <div class="contact-info">
+                                <p data-scroll="toggle(.fromTopIn, .fromTopOut)" style="margin-bottom:10px"><i class="fa fa-phone"></i> (08)39110875</p>
+                                <p data-scroll="toggle(.fromTopIn, .fromTopOut)"><i class="fa fa-home"></i> 5th floor, 55 Nguyen Van Thu str., Da Kao Ward, District 1, HCM city</p>
+                                <div class="row">
+                                    <div class="col m6 s6">
+                                        <h4 class="text-uppercase" data-scroll="toggle(.fromTopIn, .fromTopOut)">FOR CLIENT</h4>
+                                        <p data-scroll="toggle(.fromTopIn, .fromTopOut)" class="vertical-line-blue-left"><i class="fa fa-envelope-o"></i> hello@bycarnival.vn</p>
+                                    </div>
+                                    <div class="col m6 s6" style="padding-left:0px">
+                                        <h4 class="text-uppercase" data-scroll="toggle(.fromTopIn, .fromTopOut)">FOR CREW</h4>
+                                        <p data-scroll="toggle(.fromTopIn, .fromTopOut)" class="vertical-line-blue-left"><i class="fa fa-envelope-o"></i> trung.duong@bycarnival.vn</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+                     
                     </div><!--col-->
                 </div><!--row-->
             </div><!--container-->
@@ -360,21 +363,21 @@
         <!--Footer-->
         <footer id="footer" class="page-footer blue-bg scrollspy">
             <div class="container">
-                <div class="row">
+                <div class="row" style="margin-bottom:0px;">
                     <div class="col l12 s12">
                         <ul class="horizontal-list text-uppercase">
                             <li>
-                                <a class="white-text line-bottom hvr-underline-from-left" href="content-production.html">
+                                <a style="margin-bottom:15px" class="white-text line-bottom hvr-underline-from-left" href="content-production.html">
                                     content production
                                 </a>
                             </li>
                             <li>
-                                <a class="white-text line-bottom hvr-underline-from-left" href="online-entertainment.html">
+                                <a style="margin-bottom:15px" class="white-text line-bottom hvr-underline-from-left" href="online-entertainment.html">
                                     online entertaiment
                                 </a>
                             </li>
                             <li>
-                                <a class="white-text line-bottom hvr-underline-from-left" href="contact.html">
+                                <a style="margin-bottom:15px" class="white-text line-bottom hvr-underline-from-left" href="contact.html">
                                     contact us
                                 </a>
                             </li>

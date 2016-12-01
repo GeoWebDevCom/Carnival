@@ -694,12 +694,9 @@ ul.horizontal-list li{
 }
 
 .teal-shadow {
-  /*-moz-box-shadow:    5px 5px 0px 0px rgba(27,224,228,100);/*teal color */
+  -moz-box-shadow:    5px 5px 0px 0px rgba(27,224,228,100);/*teal color  */
   -webkit-box-shadow: 5px 5px 0px 0px rgba(27,224,228,100);/*teal color */
   box-shadow:         5px 5px 0px 0px  rgba(27,224,228,100);/*teal color */
-        -moz-box-shadow:    5px 5px 0px 0px #fff;
-  -webkit-box-shadow: 5px 5px 0px 0px #fff;
-  box-shadow:         5px 5px 0px 0px  #fff;
 }
 
 .yellow-shadow {

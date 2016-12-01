@@ -25,6 +25,8 @@ document.addEventListener('DOMContentLoaded', function(){
 
 $( document ).ready(function() {
   // Handler for .ready() called.
+    var isMobile = window.matchMedia("only screen and (max-width: 760px)");
+
 
   	$('.button-collapse').sideNav();
   	
@@ -62,23 +64,6 @@ $( document ).ready(function() {
       "background-size": "auto, auto, auto, auto, auto",
     });
 
-
-  	/* tooltipster */
-  	$('#crew-1').tooltipster({
-  		position: 'top'
-  	});
-
-  	$('#crew-2').tooltipster({
-  		position: 'left'
-  	});
-
-  	$('#crew-3').tooltipster({
-  		position: 'left'
-  	});
-
-  	$('#crew-4').tooltipster({
-  		position: 'right'
-  	});
 
   	/* scrolltop when page is refreshed */
   	$(this).scrollTop(0);
@@ -166,7 +151,7 @@ $( document ).ready(function() {
 
   	$('.tlt3').textillate({
   		minDisplayTime: 3000,
-  		initialDelay: 3800,
+  		initialDelay: 2000,
 	    loop: false,
 	    in:{ 
 	        effect: 'fadeInLeft',
@@ -363,19 +348,57 @@ $( document ).ready(function() {
 	if( $('.swipebox').length){
 		$( '.swipebox' ).swipebox();
 	}
-   	 
-    // NOT WORK ON MOBILE
-     var isMobile = window.matchMedia("only screen and (max-width: 760px)");
 
+    // NOT WORK ON MOBILE
     if (!isMobile.matches) {
         //Conditional script here
         skrollr.init({
             forceHeight: false,
             smoothScrolling: true,
-            smoothScrollingDuration: 3000
+            smoothScrollingDuration: 1000
         });
     }
-   	 
+
+    if(!isMobile.matches){
+        $('#crew-1').tooltipster({
+            position: 'top'
+        });
+
+        $('#crew-2').tooltipster({
+            position: 'left'
+        });
+
+        $('#crew-3').tooltipster({
+            position: 'left'
+        });
+
+        $('#crew-4').tooltipster({
+            position: 'right'
+        });
+
+    } else {
+        $('#crew-1').tooltipster({
+            position: 'top',
+            trigger: 'click'
+        });
+
+        $('#crew-2').tooltipster({
+            position: 'left',
+            trigger: 'click'
+        });
+
+        $('#crew-3').tooltipster({
+            position: 'left',
+            trigger: 'click'
+        });
+
+        $('#crew-4').tooltipster({
+            position: 'right',
+            trigger: 'click'
+        });
+
+    }
+
    
     // Change image effect on Contac page
    	 if ($("a#fc1").length) {
@@ -426,6 +449,10 @@ $( document ).ready(function() {
    	 if ($('#container').length) {
 
    	     $('#container').imagesLoaded(function () {
+   	         if (isMobile.matches) {
+   	             $("#hide-on-mobile").remove();
+   	         }
+
    	         $('#container').masonry({
    	             // options
    	             itemSelector: '.m-item'
