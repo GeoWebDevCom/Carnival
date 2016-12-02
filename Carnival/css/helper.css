@@ -947,7 +947,7 @@ img.desaturate:hover {
  height: 300px;
  margin-left: -15px;
 }
-.square{
+.square-big{
   stroke:rgba(250,196,67,100);
   /*stroke-width:5px;*/
     stroke-width:10px;

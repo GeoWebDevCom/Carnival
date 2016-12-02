@@ -23,6 +23,12 @@ violet: rgba(159,45,228,100) hex: #9f2de4;
 
 
 */
+@supports (-ms-ime-align:auto) {
+    .marginTop{
+        margin-top:115px;
+    }
+}
+
 
 body {
     background:url('../img/pattern-1.png');
@@ -59,7 +65,371 @@ body {
     background-size: auto;
 }
 
+/**********************/
+.shapes {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+}
 
+@media screen and (max-width:550px) {
+    .shapes {
+        display: none
+    }
+}
+
+.shapes.one {
+    top: 0
+}
+
+.shapes.two {
+    top: 90%
+}
+
+.shapes.two .rotate-area {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    -webkit-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    transform: rotateY(180deg)
+}
+
+.shapes.two .shape.diamond {
+    top: 35%
+}
+
+.shapes.red .shape polygon,
+.shapes.red .shape path {
+    stroke: #fd7f48
+}
+
+.shapes.red .shape.diamond {
+    border-color: #fd7f48
+}
+
+.shapes.red .shape.circle {
+    border-color: #fd7f48
+}
+
+.shapes.grey .shape polygon,
+.shapes.grey .shape path {
+    stroke: #1a9f7d
+}
+
+.shapes.grey .shape.diamond {
+    border-color: #1a9f7d
+}
+
+.shapes.grey .shape.circle {
+    border-color: #1a9f7d
+}
+
+.shapes.yellow .shape polygon,
+.shapes.yellow .shape path {
+    stroke: #ab1018
+}
+
+.shapes.yellow .shape.diamond {
+    border-color: #ab1018
+}
+
+.shapes.yellow .shape.circle {
+    border-color: #ab1018
+}
+
+.shapes.pink .shape polygon,
+.shapes.pink .shape path {
+    stroke: #6ab1d7
+}
+
+.shapes.pink .shape.diamond {
+    border-color: #6ab1d7
+}
+
+.shapes.pink .shape.circle {
+    border-color: #6ab1d7
+}
+
+.shapes.victoria .shape polygon,
+.shapes.victoria .shape path {
+    stroke: #c9cf33
+}
+
+.shapes.victoria .shape.diamond {
+    border-color: #c9cf33
+}
+
+.shapes.victoria .shape.circle {
+    border-color: #c9cf33
+}
+
+.shapes.blue .shape polygon,
+.shapes.blue .shape path {
+    stroke: #428ab0
+}
+
+.shapes.blue .shape.diamond {
+    border-color: #428ab0
+}
+
+.shapes.blue .shape.circle {
+    border-color: #428ab0
+}
+
+.shapes.green .shape polygon,
+.shapes.green .shape path {
+    stroke: #5ec3b2
+}
+
+.shapes.green .shape.diamond {
+    border-color: #5ec3b2
+}
+
+.shapes.green .shape.circle {
+    border-color: #5ec3b2
+}
+
+.shapes.green2 .shape polygon,
+.shapes.green2 .shape path {
+    /*stroke: #3bbda7*/
+     stroke: #ffbb53;
+}
+
+.shapes.green2 .shape.diamond {
+    /*border-color: #3bbda7*/
+     border-color: #ffbb53;
+}
+
+.shapes.green2 .shape.circle {
+    /*border-color: #3bbda7*/
+      border-color: #ffbb53;
+}
+
+.shapes .shape {
+    position: absolute;
+    top: 0;
+    left: 0
+}
+
+.shapes .shape polygon,
+.shapes .shape path {
+    /*stroke: #3bbda7;*/
+        stroke: #ffbb53;
+    -webkit-transition: all .4s ease;
+    transition: all .4s ease
+}
+
+.square{
+    stroke: #3bbda7 !important;
+}
+
+
+.shapes .shape.triangle {
+    width: 120px;
+    height: 120px;
+    top: 15%;
+    left: 5%;
+    -webkit-transform: rotate(-10deg);
+    -ms-transform: rotate(-10deg);
+    transform: rotate(-10deg)
+}
+
+.shapes .shape.triangle polygon {
+    /*stroke-width: .25*/
+       stroke-width: 1px;
+}   
+
+.shapes .shape.triangle.small {
+    width: 60px;
+    height: 60px;
+    top: 80%;
+    left: 25%;
+    -webkit-transform: rotate(25deg);
+    -ms-transform: rotate(25deg);
+    transform: rotate(25deg)
+}
+
+.shapes .shape.triangle.small polygon {
+    stroke-width: .45
+}
+
+.shapes .shape.circle, .shapes .shape.circle2 {
+    width: 90px;
+    height: 90px;
+    border-radius: 100%;
+    border: 5px solid #3bbda7;
+    top: 75%;
+    left: 90%;
+    -webkit-transition: border-color .4s ease;
+    transition: border-color .4s ease
+}
+.shapes .shape.circle2{
+        border: 5px solid #ffbb53;
+}
+.shapes .shape.circle2.small{
+          width: 50px;
+    height: 50px;
+    top: 55%;
+    left: 75%;
+    -webkit-transform: rotate(25deg);
+    -ms-transform: rotate(25deg);
+    transform: rotate(25deg)
+}
+.shapes .shape.circle.small {
+    width: 50px;
+    height: 50px;
+    top: 50%;
+    left: 25%;
+    -webkit-transform: rotate(25deg);
+    -ms-transform: rotate(25deg);
+    transform: rotate(25deg)
+}
+
+.shapes .shape.diamond {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #3bbda7;
+    top: 85%;
+    left: 60%;
+    -webkit-transform: rotate(-50deg);
+    -ms-transform: rotate(-50deg);
+    transform: rotate(-50deg);
+    -webkit-transition: border-color .4s ease;
+    transition: border-color .4s ease
+}
+
+
+.shapes .shape.waves, .shapes .shape.waves2 {
+    width: 60px;
+    height: 60px;
+    top: 65%;
+    left: 5%;
+    -webkit-transform: rotate(-50deg);
+    -ms-transform: rotate(-50deg);
+    transform: rotate(-50deg)
+}
+
+.shapes .shape.waves path {
+    stroke-width: .55
+}
+.shapes .shape.smallsquare{
+    width: 40px;
+    height: 40px;
+    top: 65%;
+    left: 5%;
+    -webkit-transform: rotate(25deg);
+    -ms-transform: rotate(25deg);
+    transform: rotate(25deg)
+}
+.shapes .shape.waves2.small{
+    width: 40px;
+    height: 40px;
+    top: 20%;
+    left: 92%;
+        -webkit-transform: rotate(25deg);
+    -ms-transform: rotate(25deg);
+    transform: rotate(25deg)
+}
+.shapes .shape.waves.small {
+    width: 40px;
+    height: 40px;
+    top: 20%;
+    left: 92%;
+    -webkit-transform: rotate(25deg);
+    -ms-transform: rotate(25deg);
+    transform: rotate(25deg)
+}
+
+.shapes .shape.waves.small path {
+    stroke-width: .6
+}
+
+.shapes .shape.hexa {
+    width: 50px;
+    height: 50px;
+    top: 55%;
+    left: 75%;
+    -webkit-transform: rotate(-50deg);
+    -ms-transform: rotate(-50deg);
+    transform: rotate(-50deg)
+}
+
+.shapes .shape.hexa polygon {
+    stroke-width: .5
+}
+
+.slipper {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    text-align: center
+}
+@-webkit-keyframes move {
+      from {
+    -ms-transform: translate(0,0);
+    -moz-transform: translate(0,0);
+    -webkit-transform:translate(0,0);
+    -o-transform: translate(0,0);
+    transform: translate(0,0);
+  }
+  to {
+    -ms-transform: translate(0,200px);
+    -moz-transform: translate(0,200px);
+    -webkit-transform:translate(0,200px);
+    -o-transform:translate(0,200px);
+    transform: translate(0,200px);
+  }
+}
+
+
+@-webkit-keyframes rotating /* Safari and Chrome */ {
+  from {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotating {
+  from {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+.rotating {
+  -webkit-animation: rotating 6s linear infinite;
+  -moz-animation: rotating 6s linear infinite;
+  -ms-animation: rotating 6s linear infinite;
+  -o-animation: rotating 6s linear infinite;
+  animation: rotating 6s linear infinite;
+}
+
+
+
+/*************************/
 /* TYPOGRAPHY */
 
 body{
@@ -971,13 +1341,29 @@ height: 3px;
     background-color: rgba(27,224,228,100);
     -webkit-clip-path: polygon(0 100%, 0 0, 100% 20%, 100% 80%);
     clip-path: polygon(0 100%, 0 0, 100% 20%, 100% 80%);
-   -webkit-clip-path: url("#clip-shape-fun-together");  
-  clip-path: url("#clip-shape-fun-together-");
+   -webkit-clip-path: url("#clip-shape-fun-together-2");  
+  clip-path: url("#clip-shape-fun-together-2");
 }
 
 @media (min-width: 768px ) { 
+      #fun-together{
+    min-height: 800px;
+    background-color: rgba(27,224,228,100);
+    -webkit-clip-path: polygon(0 100%, 0 0, 100% 20%, 100% 80%);
+    clip-path: polygon(0 100%, 0 0, 100% 20%, 100% 80%);
+   -webkit-clip-path: url("#clip-shape-fun-together");  
+  clip-path: url("#clip-shape-fun-together");
+}
  }
 @media (min-width: 992px ) { 
+      #fun-together{
+    min-height: 800px;
+    background-color: rgba(27,224,228,100);
+    -webkit-clip-path: polygon(0 100%, 0 0, 100% 20%, 100% 80%);
+    clip-path: polygon(0 100%, 0 0, 100% 20%, 100% 80%);
+   -webkit-clip-path: url("#clip-shape-fun-together");  
+  clip-path: url("#clip-shape-fun-together");
+}
  }
 @media (min-width: 1200px ) { 
     #fun-together{
@@ -1158,7 +1544,7 @@ height: 3px;
 
 #what-make-us div.section-header h5{
     font-size: 1.5rem;
-    text-indent: 6rem;
+    text-indent: -5rem;
 }
 
 #what-make-us div.section-header h5:before{
@@ -1167,8 +1553,7 @@ height: 3px;
     height: 2px;
     background-color: #fac443;/* yellow color */
     width: 100px;
-    left: 50%;
-    margin-left: -140px;
+    left: 60%;
     bottom: 0;
 }
 
@@ -1404,7 +1789,7 @@ height: 3px;
 @media (min-width: 768px ) { 
       .section-catch-up{
         margin-top: 10rem;
-            margin-bottom:10rem;
+            margin-bottom:13rem;
              padding-left:0px;
     }
  }
@@ -1412,13 +1797,13 @@ height: 3px;
       .section-catch-up{
         margin-top: 10rem;
            padding-left:0px;
-            margin-bottom:10rem;
+            margin-bottom:13rem;
     }
  }
 @media (min-width: 1200px ) { 
     .section-catch-up{
         margin-top: 10rem;
-        margin-bottom:10rem;
+        margin-bottom:13rem;
            padding-left:0px;
     }
  }
@@ -1439,7 +1824,7 @@ height: 3px;
 @media (min-width: 768px ) { 
         .contact-info p{
     font-size: 1.2rem;
-    margin-bottom:10px;
+    margin-bottom:5px;
 }
           .contact-info h4{
     font-size:1.5rem;
@@ -1452,7 +1837,7 @@ height: 3px;
 @media (min-width: 992px ) { 
         .contact-info p{
     font-size: 1.2rem;
-    margin-bottom:10px;
+    margin-bottom:5px;
 }
           .contact-info h4{
     font-size:1.5rem;
@@ -1465,7 +1850,7 @@ height: 3px;
 @media (min-width: 1200px ) { 
     .contact-info p{
     font-size: 1.2rem;
-    margin-bottom:10px;
+    margin-bottom:5px;
 }
     .contact-info h4{
     font-size:1.5rem;
@@ -1482,7 +1867,9 @@ height: 3px;
     font-size:4rem;
     line-height:4rem;
 }*/
+.bigger-cr{
 
+}
 #online-entertainment-banner {
     margin-top: 0;
     padding-top: 0;
@@ -1492,11 +1879,29 @@ height: 3px;
     background-image:  url('../img/online-entertainment-banner-icon-2.png'), url('../img/online-entertainment-banner.png');
     background-position: center right, bottom;
     background-repeat: no-repeat, no-repeat;
-    background-size: 650px auto, cover;
+    background-size: 300px auto, cover;
     background-color:#fff;
     vertical-align:middle;
     background-color: transparent;
 }
+@media (min-width: 768px ) { 
+        #online-entertainment-banner{
+            background-size: 650px auto, cover;
+    }
+ }
+@media (min-width: 992px ) { 
+        #online-entertainment-banner{
+            background-size: 650px auto, cover;
+    }
+ }
+@media (min-width: 1200px ) { 
+    #online-entertainment-banner{
+            background-size: 650px auto, cover;
+    }
+ }
+
+
+
 
 #online-entertainment-banner .container{
     padding-top: 200px;
@@ -1569,10 +1974,30 @@ height: 3px;
     background-color: rgba(27,224,228,100);
     -webkit-clip-path: polygon(0 80%, 0 20%, 100% 0, 100% 100%);
     clip-path: polygon(0 80%, 0 20%, 100% 0, 100% 100%);
-   -webkit-clip-path: url("#clip-shape-buy-a-ticket");  /* required for Webkit/Blink browsers if you're using only inline SVG clipping paths, but not CSS clip-path */
-  clip-path: url("#clip-shape-buy-a-ticket");
+   -webkit-clip-path: url("#clip-shape-buy-a-ticket-2");  /* required for Webkit/Blink browsers if you're using only inline SVG clipping paths, but not CSS clip-path */
+  clip-path: url("#clip-shape-buy-a-ticket-2");
 
 }
+@media (min-width: 768px ) { 
+     #buy-a-ticket{
+          -webkit-clip-path: url("#clip-shape-buy-a-ticket");  /* required for Webkit/Blink browsers if you're using only inline SVG clipping paths, but not CSS clip-path */
+  clip-path: url("#clip-shape-buy-a-ticket");
+    }
+ }
+@media (min-width: 992px ) { 
+     #buy-a-ticket{
+          -webkit-clip-path: url("#clip-shape-buy-a-ticket");  /* required for Webkit/Blink browsers if you're using only inline SVG clipping paths, but not CSS clip-path */
+  clip-path: url("#clip-shape-buy-a-ticket");
+    }
+ }
+@media (min-width: 1200px ) { 
+    #buy-a-ticket{
+          -webkit-clip-path: url("#clip-shape-buy-a-ticket");  /* required for Webkit/Blink browsers if you're using only inline SVG clipping paths, but not CSS clip-path */
+  clip-path: url("#clip-shape-buy-a-ticket");
+    }
+ }
+
+
 
 #buy-a-ticket div.section-header{
     padding-top: 2rem;
@@ -1597,7 +2022,7 @@ height: 3px;
 
 #buy-a-ticket div.section-header h5{
     font-size: 1.5rem;
-    text-indent: 5rem;
+    /*text-indent: 5rem;*/
     line-height:1rem;
 }
 
@@ -1607,8 +2032,7 @@ height: 3px;
     height: 2px;
     background-color: #fac443;/* yellow color */
     width: 60px;
-    left: 50%;
-    margin-left: -130px;
+    right:0;
     bottom: 0;
 }
 
@@ -1701,7 +2125,8 @@ height: 3px;
 
 @media only screen and (max-width : 992px) {
     #contact-banner {
-      background-position: bottom 80px right -50px, bottom;
+      /*background-position: bottom 80px right -50px, bottom;*/
+            background-position: bottom 300px right -120px, bottom;
       background-size: 380px auto, cover;
   }
 }
@@ -1734,12 +2159,12 @@ height: 3px;
 #our-team div.section-header h2:before{
     position: absolute;
     content: "";
-    height: 5px;
+    height: 4px;
     background-color: #fac443;/* yellow color */
     width: 100px;
     left: 50%;
-    margin-left: -150px;
-    bottom: -10px;
+    margin-left: -165px;
+    bottom: -5px;
 }
 
 /* STUDIO */
@@ -1924,10 +2349,30 @@ height: 3px;
     line-height:1.2rem;
     font-size:1.2rem;
 }*/
+.gobot{
+        margin-bottom: -100px;
+}
+@media (min-width: 768px ) { 
+      .gobot{
+        margin-bottom: 0px;
+}
+ }
+@media (min-width: 992px ) { 
+      .gobot{
+        margin-bottom: 0px;
+}
+ }
+@media (min-width: 1200px ) { 
+     .gobot{
+        margin-bottom: 0px;
+}
+ }
+
 
 @media only screen and (max-width : 992px) {
     #content-production-banner {
-      background-position: bottom 80px right -50px, bottom;
+      /*background-position: bottom 80px right -50px, right;*/
+    background-position: bottom 300px right -150px, right;
       background-size: 380px auto, cover;
   }
 }
@@ -1948,27 +2393,42 @@ height: 3px;
 */
 
 #video-production{
-    min-height: auto;
+    min-height: 400px;
     background-image: url('../img/red-banner-bg.png');
     background-repeat:no-repeat;
     background-size:100% 100%;
     background-position:center;
-    padding-top: 0rem;
+    padding-top: 7rem;
     background-color: transparent;
+}
+.haspl{
+    padding-left:100px;
 }
 @media (min-width: 768px ) { 
       #video-production{
             min-height: 800px;
+                  padding-top: 0rem;
+    }
+      .haspl{
+        padding-left:0px;
     }
  }
 @media (min-width: 992px ) { 
       #video-production{
             min-height: 800px;
+                  padding-top: 0rem;
+    }
+      .haspl{
+        padding-left:0px;
     }
  }
 @media (min-width: 1200px ) { 
     #video-production{
             min-height: 800px;
+             padding-top: 0rem;
+    }
+    .haspl{
+        padding-left:0px;
     }
  }
 
@@ -2191,8 +2651,16 @@ height: 3px;
     background-color: transparent;
 }
 
-#illustration .container{
-  
+#illustration .container{  
+    background-image: none;
+    background-repeat:no-repeat;
+    background-size:300px;
+    background-position:left 180px bottom 30px;
+    padding-top: 0rem;
+    background-color: transparent;
+}
+@media (min-width: 768px ) { 
+      #illustration .container{  
     background-image: url('../img/dream-create-design-text.png');
     background-repeat:no-repeat;
     background-size:300px;
@@ -2200,6 +2668,29 @@ height: 3px;
     padding-top: 0rem;
     background-color: transparent;
 }
+ }
+@media (min-width: 992px ) { 
+      #illustration .container{  
+    background-image: url('../img/dream-create-design-text.png');
+    background-repeat:no-repeat;
+    background-size:300px;
+    background-position:left 180px bottom 30px;
+    padding-top: 0rem;
+    background-color: transparent;
+}
+ }
+@media (min-width: 1200px ) { 
+    #illustration .container{  
+    background-image: url('../img/dream-create-design-text.png');
+    background-repeat:no-repeat;
+    background-size:300px;
+    background-position:left 180px bottom 30px;
+    padding-top: 0rem;
+    background-color: transparent;
+}
+ }
+
+
 
 #illustration-headline div.section-header{
     padding-top: 2rem;
@@ -2216,6 +2707,47 @@ height: 3px;
     /*line-height: 3rem;*/
 
 }
+    #illustration-headline div.section-header h2{
+    line-height:1rem;
+    font-size:3rem;
+    margin-bottom:10px;
+}
+     #illustration-headline div.section-header p{
+         text-align:left;
+     }
+@media (min-width: 768px ) { 
+     #illustration-headline div.section-header h2{
+    line-height:1rem;
+    font-size:3rem;
+    margin-bottom:10px;
+}
+         #illustration-headline div.section-header p{
+         text-align:center;
+     }
+ }
+@media (min-width: 992px ) { 
+     #illustration-headline div.section-header h2{
+    line-height:1rem;
+    font-size:3rem;
+    margin-bottom:10px;
+}
+         #illustration-headline div.section-header p{
+         text-align:center;
+     }
+ }
+@media (min-width: 1200px ) { 
+    #illustration-headline div.section-header h2{
+    line-height:1rem;
+    font-size:3rem;
+    margin-bottom:10px;
+}
+         #illustration-headline div.section-header p{
+         text-align:center;
+     }
+ }
+
+
+
 
 #illustration-headline div.section-header h5{
     font-size: 1.5rem;

@@ -93,6 +93,7 @@ $( document ).ready(function() {
   	$('.line-1').hide();
   	$('.line-2').hide();
 
+  	$('.tlt1').show();
   	 $('.tlt1').textillate({
   	 	minDisplayTime: 500,
   	 	initialDelay: 0,
@@ -124,6 +125,7 @@ $( document ).ready(function() {
 	    }
 	});
 
+  	 $('.tlt2').show();
   	$('.tlt2').textillate({
   		minDisplayTime: 2000,
   		initialDelay: 1500,
@@ -148,7 +150,7 @@ $( document ).ready(function() {
 	        }
 	    }
 	});
-
+  	$('.tlt3').show();
   	$('.tlt3').textillate({
   		minDisplayTime: 3000,
   		initialDelay: 2000,
@@ -289,15 +291,23 @@ $( document ).ready(function() {
 
   	/* initialize carousel on online entertainment page */
 
-  	if($('.online-entertainment-carousel').length){
-  		$('.carousel').carousel({
-            dist:0,
-            shift:0,
-            padding:0
-	    });
+  	if ($('.online-entertainment-carousel').length) {
+  	    if (!isMobile.matches) {
+  	        $('.carousel').carousel({
+  	            dist: 0,
+  	            shift: 0,
+  	            padding: 0
+  	        });
+  	    } else {
+  	        $('.carousel').carousel({
+  	            dist: -100,
+  	            shift: 0,
+  	            padding: 10
+  	        });
+  	    }
 
 	  	$('#carousel-next-icon').click(function(){
-	  	 	$('.carousel').carousel('next');
+	  	    $('.carousel').carousel('next');  	
 	  	});
 
 	  	$('#carousel-prev-icon').click(function(){
@@ -465,6 +475,28 @@ $( document ).ready(function() {
    	     //});
    	 }
 
-   	 jQuery.scrollSpeed(50, 800);
+   	 //jQuery.scrollSpeed(50, 800, 'easeOutCubic');
 
 });
+
+if (window.addEventListener) window.addEventListener('DOMMouseScroll', wheel, false);
+window.onmousewheel = document.onmousewheel = wheel;
+
+function wheel(event) {
+    var delta = 0;
+    if (event.wheelDelta) delta = event.wheelDelta / 120;
+    else if (event.detail) delta = -event.detail / 3;
+
+    handle(delta);
+    if (event.preventDefault) event.preventDefault();
+    event.returnValue = false;
+}
+
+function handle(delta) {
+    var time = 1000;
+    var distance = 200;
+
+    $('html, body').stop().animate({
+        scrollTop: $(window).scrollTop() - (distance * delta)
+    }, time);
+}
